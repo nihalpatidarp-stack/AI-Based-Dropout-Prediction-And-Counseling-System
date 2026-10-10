@@ -1,62 +1,105 @@
-# 🎓 Student Dropout Prediction & Counseling Dashboard
+# AI-Based Dropout Prediction and Counseling System
 
-An AI-based web application designed to predict student dropout risk using machine learning and provide personalized counseling recommendations to support academic success and improve student retention.
+**Smart India Hackathon 2025**
 
-## 🚀 Features
+| | |
+|---|---|
+| **Problem Statement ID** | SIH25102 |
+| **Problem Statement Title** | AI-based drop-out prediction and counseling system |
+| **Theme** | Smart Automation |
+| **PS Category** | Software |
+| **Team ID** | 91089 |
+| **Team Name** | ChangeMakerss |
 
-- **Dropout Risk Prediction:** Classifies students into Low, Medium, and High risk categories.
-- **Machine Learning:** Uses Logistic Regression to predict dropout risk based on academic data.
-- **Model Evaluation:** Displays classification metrics and a confusion matrix to evaluate model performance.
-- **CSV Upload:** Allows users to upload student data for batch predictions.
-- **Personalized Counseling:** Provides recommendations based on predicted risk categories.
-- **Result Export:** Enables users to download prediction results as a CSV file.
-- **Interactive Dashboard:** Provides a user-friendly interface built with Streamlit.
+---
 
-## 🛠️ Technologies Used
+## 📌 Overview
 
-- Python
-- Streamlit
-- Pandas and NumPy
-- Scikit-learn
-- Matplotlib
-- Logistic Regression
+An AI-powered system that predicts student dropout risk (**High / Medium / Low**) and provides personalized counseling recommendations to enable early intervention — helping institutions improve student retention and academic success.
 
-## ⚙️ Installation and Setup
+---
 
-1. Clone the repository:
+## 🚀 Proposed Solution
 
-   ```bash
-   git clone https://github.com/nihalpatidarp-stack/Dropout_Dashboard.git
-   cd Dropout_Dashboard
-   ```
+- AI-powered prediction system to classify students as **High / Medium / Low** risk
+- Uses a **Kaggle dataset** + **Logistic Regression** model
+- Provides **personalized counseling recommendations**
+- **Streamlit-based web app** for faculty with CSV upload & risk reports
+- Enables **early detection** before failure or dropout occurs
+- **Unique value:** Combines prediction + counseling in a single platform
 
-2. Install the required libraries:
+### System Architecture
 
-   ```bash
-   pip install streamlit pandas numpy scikit-learn matplotlib
-   ```
+```
+User Uploads Data (CSV/Excel)
+        ↓
+Web App & Data Pre-processing (Cleaning, Feature Engineering, Normalization)
+        ↓
+ML Model Training (Logistic Regression / Random Forest / Deep Learning)
+        ↓
+Risk Category Prediction
+        ↓
+   Low / Medium / High Risk
+        ↓
+Personalized Counseling Advice (Academic Support, Mental Health,
+Financial Aid, Career Guidance, Feedback Surveys)
+        ↓
+Export Results (PDF, CSV, Dashboard)
+```
 
-3. Run the application:
+---
 
-   ```bash
-   streamlit run app_new.py
-   ```
+## 🛠️ Technical Approach
 
-4. Open the local URL displayed in your terminal, usually `http://localhost:8501`.
+### Technologies
+- Python, Pandas, Scikit-learn
+- Machine Learning
+- Streamlit (Web App)
+- Matplotlib (Visualization)
+- Dataset: Kaggle – Student Dropout & Academic Success
 
-## 📊 How It Works
+### Methodology
+1. **Data Preprocessing** – Cleaning, encoding, and scaling data
+2. **Model Training** – Training a Logistic Regression model
+3. **Evaluation** – Accuracy, classification report, confusion matrix
+4. **Deployment** – Streamlit app for predictions & counseling support
 
-1. Load and preprocess the student academic dataset.
-2. Train a Logistic Regression model.
-3. Evaluate model performance using classification metrics and a confusion matrix.
-4. Upload new student data in CSV format.
-5. Predict dropout probabilities and assign risk categories.
-6. Display counseling recommendations and export the results.
+---
 
-## 🎯 Objective
+## ✅ Feasibility and Viability
 
-The goal of this project is to support early identification of students who may be at risk of dropping out and help educators plan timely academic interventions and counseling support.
+**Feasibility**
+- Works with real student datasets (tested on Kaggle)
+- Scalable to integrate with ERP/LMS systems
+- Low-cost (uses open-source tools)
 
-## ⚠️ Disclaimer
+**Challenges & Risks**
+- Data quality & availability
+- Privacy & ethics of student data
+- Selecting a suitable ML model
 
-Predictions are intended to support educational decision-making and should not be treated as definitive judgments about individual students. Model performance and fairness should be evaluated before real-world use.
+**Mitigation Strategies**
+- Retrain models with updated data
+- Clean and validate datasets
+- Use the most accurate model available
+
+---
+
+## 🌟 Impact and Benefits
+
+**Potential Impact**
+- Identify at-risk students early
+- Provide timely counseling and support
+- Improve academic success and retention
+- Reduce dropout rate
+
+**Benefits**
+- Better student engagement, reduced failure rates
+- Saves resources on repeated courses, improves institutional efficiency
+- Data-driven decisions for mentoring and interventions
+
+---
+
+## 📄 License
+
+This project was developed as part of Smart India Hackathon 2025.
